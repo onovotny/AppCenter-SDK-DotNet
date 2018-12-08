@@ -141,10 +141,6 @@
       <Project>{8072449C-C6A8-4B36-87DC-173F295D161C}</Project>
       <Name>Microsoft.AppCenter.Push.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SDK\AppCenter\Microsoft.AppCenter.UWP\Microsoft.AppCenter.UWP.csproj">
-      <Project>{15e3fc9b-7714-4468-a296-81627a5b8f01}</Project>
-      <Name>Microsoft.AppCenter.UWP</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -152,10 +152,6 @@
       <Project>{bcd888d1-a62f-458c-a72b-9df731ee1a55}</Project>
       <Name>Microsoft.AppCenter.Rum.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SDK\AppCenter\Microsoft.AppCenter.UWP\Microsoft.AppCenter.UWP.csproj">
-      <Project>{15e3fc9b-7714-4468-a296-81627a5b8f01}</Project>
-      <Name>Microsoft.AppCenter.UWP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Contoso.Forms.Puppet\Contoso.Forms.Puppet.csproj">
       <Project>{92313c69-3bc4-4276-a1c8-100c86183f12}</Project>
       <Name>Contoso.Forms.Puppet</Name>

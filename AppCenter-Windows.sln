@@ -17,12 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCenterCrashes", "AppCent
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter", "SDK\AppCenter\Microsoft.AppCenter\Microsoft.AppCenter.csproj", "{3FE04B97-48DE-4895-8612-ECBDFEBD917C}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Microsoft.AppCenter.Shared", "SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.shproj", "{C6C4937C-D5F4-4E00-8B51-8D826AD83C5E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.UWP", "SDK\AppCenter\Microsoft.AppCenter.UWP\Microsoft.AppCenter.UWP.csproj", "{15E3FC9B-7714-4468-A296-81627A5B8F01}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Microsoft.AppCenter.Windows.Shared", "SDK\AppCenter\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.shproj", "{B4E6AD1C-21A0-43A4-BD73-ED9BFC19BE6F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AppCenter.Analytics", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics\Microsoft.AppCenter.Analytics.csproj", "{0F13E444-717E-460A-BDE7-8AD537F0A418}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Analytics.UWP", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.UWP\Microsoft.AppCenter.Analytics.UWP.csproj", "{200073BF-FA7E-42AF-8ED5-AA50BE7C0295}"
@@ -103,8 +97,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.WPF.Demo", "Apps\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.WPF.Puppet", "Apps\Contoso.WPF.Puppet\Contoso.WPF.Puppet.csproj", "{951ABE8D-7AF6-4162-8639-E78B022B1048}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.WindowsDesktop", "SDK\AppCenter\Microsoft.AppCenter.WindowsDesktop\Microsoft.AppCenter.WindowsDesktop.csproj", "{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Analytics.WindowsDesktop", "SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.WindowsDesktop\Microsoft.AppCenter.Analytics.WindowsDesktop.csproj", "{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AppCenter.Crashes.WindowsDesktop", "SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.WindowsDesktop\Microsoft.AppCenter.Crashes.WindowsDesktop.csproj", "{DC55C086-714D-4E2F-B6CE-3C14BC3B6646}"
@@ -117,10 +109,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.UWP.Demo", "Apps\Co
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems*{15e3fc9b-7714-4468-a296-81627a5b8f01}*SharedItemsImports = 4
-		SDK\AppCenter\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.projitems*{15e3fc9b-7714-4468-a296-81627a5b8f01}*SharedItemsImports = 4
-		SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems*{1e9ec0aa-3e32-4551-80c4-e4f3e53d7590}*SharedItemsImports = 4
-		SDK\AppCenter\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.projitems*{1e9ec0aa-3e32-4551-80c4-e4f3e53d7590}*SharedItemsImports = 4
 		SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Windows.Shared\Microsoft.AppCenter.Analytics.Windows.Shared.projitems*{1f6c139a-29bb-4e74-8df2-f8ccab399a67}*SharedItemsImports = 4
 		SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Windows.Shared\Microsoft.AppCenter.Analytics.Windows.Shared.projitems*{200073bf-fa7e-42af-8ed5-aa50be7c0295}*SharedItemsImports = 4
 		SDK\AppCenterRum\Microsoft.AppCenter.Rum.Shared\Microsoft.AppCenter.Rum.Shared.projitems*{254d5434-9087-4f05-a43f-23a790e42024}*SharedItemsImports = 4
@@ -140,17 +128,13 @@ Global
 		SDK\AppCenterRum\Microsoft.AppCenter.Rum.Shared\Microsoft.AppCenter.Rum.Shared.projitems*{8e7b80c4-d22a-4f80-a7ae-e3882e72ffb3}*SharedItemsImports = 13
 		SDK\AppCenterPush\Microsoft.AppCenter.Push.Shared\Microsoft.AppCenter.Push.Shared.projitems*{8ee6b5da-6547-43c8-aeb6-8e0eae3f81c9}*SharedItemsImports = 4
 		SDK\AppCenterPush\Microsoft.AppCenter.Push.Shared\Microsoft.AppCenter.Push.Shared.projitems*{a5d2fd20-13ee-4ca4-8278-09520cc376cd}*SharedItemsImports = 13
-		SDK\AppCenter\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.projitems*{b4e6ad1c-21a0-43a4-bd73-ed9bfc19be6f}*SharedItemsImports = 13
 		SDK\AppCenterPush\Microsoft.AppCenter.Push.Windows.Shared\Microsoft.AppCenter.Push.Windows.Shared.projitems*{ba25a66a-fcea-49c2-a85a-0f6f54463675}*SharedItemsImports = 13
 		SDK\AppCenterRum\Microsoft.AppCenter.Rum.Shared\Microsoft.AppCenter.Rum.Shared.projitems*{bcd888d1-a62f-458c-a72b-9df731ee1a55}*SharedItemsImports = 4
 		SDK\AppCenterRum\Microsoft.AppCenter.Rum.Windows.Shared\Microsoft.AppCenter.Rum.Windows.Shared.projitems*{bcd888d1-a62f-458c-a72b-9df731ee1a55}*SharedItemsImports = 4
 		SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Windows.Shared\Microsoft.AppCenter.Analytics.Windows.Shared.projitems*{c5dac35e-b902-4e24-a8f7-963ad0f85f7a}*SharedItemsImports = 4
-		SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems*{c6c4937c-d5f4-4e00-8b51-8d826ad83c5e}*SharedItemsImports = 13
 		SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Shared\Microsoft.AppCenter.Crashes.Shared.projitems*{db5a0b7d-8090-4a0c-97c7-cdf17aacaaf2}*SharedItemsImports = 13
 		SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Shared\Microsoft.AppCenter.Crashes.Shared.projitems*{dc55c086-714d-4e2f-b6ce-3c14bc3b6646}*SharedItemsImports = 4
 		SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.Windows.Shared\Microsoft.AppCenter.Crashes.Windows.Shared.projitems*{dc55c086-714d-4e2f-b6ce-3c14bc3b6646}*SharedItemsImports = 4
-		SDK\AppCenter\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems*{e76dc547-2b63-4911-971c-767587ebfab6}*SharedItemsImports = 4
-		SDK\AppCenter\Microsoft.AppCenter.Windows.Shared\Microsoft.AppCenter.Windows.Shared.projitems*{e76dc547-2b63-4911-971c-767587ebfab6}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -191,30 +175,6 @@ Global
 		{3FE04B97-48DE-4895-8612-ECBDFEBD917C}.Release|x64.Build.0 = Release|Any CPU
 		{3FE04B97-48DE-4895-8612-ECBDFEBD917C}.Release|x86.ActiveCfg = Release|Any CPU
 		{3FE04B97-48DE-4895-8612-ECBDFEBD917C}.Release|x86.Build.0 = Release|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|Any CPU.Build.0 = Debug|x86
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|ARM.ActiveCfg = Debug|ARM
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|ARM.Build.0 = Debug|ARM
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|x64.ActiveCfg = Debug|x64
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|x64.Build.0 = Debug|x64
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|x86.ActiveCfg = Debug|x86
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Debug|x86.Build.0 = Debug|x86
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|ARM.ActiveCfg = Release|ARM
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|ARM.Build.0 = Release|ARM
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|iPhone.Build.0 = Release|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|x64.ActiveCfg = Release|x64
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|x64.Build.0 = Release|x64
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|x86.ActiveCfg = Release|x86
-		{15E3FC9B-7714-4468-A296-81627A5B8F01}.Release|x86.Build.0 = Release|x86
 		{0F13E444-717E-460A-BDE7-8AD537F0A418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F13E444-717E-460A-BDE7-8AD537F0A418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F13E444-717E-460A-BDE7-8AD537F0A418}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -796,30 +756,6 @@ Global
 		{951ABE8D-7AF6-4162-8639-E78B022B1048}.Release|x64.Build.0 = Release|Any CPU
 		{951ABE8D-7AF6-4162-8639-E78B022B1048}.Release|x86.ActiveCfg = Release|Any CPU
 		{951ABE8D-7AF6-4162-8639-E78B022B1048}.Release|x86.Build.0 = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|ARM.Build.0 = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|x64.Build.0 = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Debug|x86.Build.0 = Debug|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|ARM.ActiveCfg = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|ARM.Build.0 = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|iPhone.Build.0 = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|x64.ActiveCfg = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|x64.Build.0 = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|x86.ActiveCfg = Release|Any CPU
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590}.Release|x86.Build.0 = Release|Any CPU
 		{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -903,9 +839,6 @@ Global
 		{95CACF52-25AA-4C05-B587-2BBF4B5514D1} = {52B933EB-4C7D-4646-B12B-DF6BBAD7921A}
 		{A60D537E-41F7-44D6-95C8-5DDB77B07308} = {52B933EB-4C7D-4646-B12B-DF6BBAD7921A}
 		{3FE04B97-48DE-4895-8612-ECBDFEBD917C} = {A0839AAC-BC4D-4DDE-9ACB-C094BC599C16}
-		{C6C4937C-D5F4-4E00-8B51-8D826AD83C5E} = {A0839AAC-BC4D-4DDE-9ACB-C094BC599C16}
-		{15E3FC9B-7714-4468-A296-81627A5B8F01} = {A0839AAC-BC4D-4DDE-9ACB-C094BC599C16}
-		{B4E6AD1C-21A0-43A4-BD73-ED9BFC19BE6F} = {A0839AAC-BC4D-4DDE-9ACB-C094BC599C16}
 		{0F13E444-717E-460A-BDE7-8AD537F0A418} = {95CACF52-25AA-4C05-B587-2BBF4B5514D1}
 		{200073BF-FA7E-42AF-8ED5-AA50BE7C0295} = {95CACF52-25AA-4C05-B587-2BBF4B5514D1}
 		{7CE5BF9E-3650-4151-8B54-C1301AA73606} = {95CACF52-25AA-4C05-B587-2BBF4B5514D1}
@@ -946,7 +879,6 @@ Global
 		{A0A24A9A-89CB-48EF-8865-705AB81E53F5} = {AA6821F3-930A-49E4-BA3F-D68255F39F1E}
 		{AA7C64B6-2E77-4DA5-95ED-AA367D004A8F} = {A0A24A9A-89CB-48EF-8865-705AB81E53F5}
 		{951ABE8D-7AF6-4162-8639-E78B022B1048} = {2CE90D96-B5DD-417D-BC25-B5EB20D993B9}
-		{1E9EC0AA-3E32-4551-80C4-E4F3E53D7590} = {A0839AAC-BC4D-4DDE-9ACB-C094BC599C16}
 		{1F6C139A-29BB-4E74-8DF2-F8CCAB399A67} = {95CACF52-25AA-4C05-B587-2BBF4B5514D1}
 		{DC55C086-714D-4E2F-B6CE-3C14BC3B6646} = {A60D537E-41F7-44D6-95C8-5DDB77B07308}
 		{3F190EDF-F524-4B8D-9031-CD7B045EB6A5} = {A60D537E-41F7-44D6-95C8-5DDB77B07308}

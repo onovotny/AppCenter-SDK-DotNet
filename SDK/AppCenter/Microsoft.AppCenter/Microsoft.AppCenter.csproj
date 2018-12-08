@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\Microsoft.AppCenter.Shared\Microsoft.AppCenter.Shared.projitems" Label="Shared" />
+﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;portable-net45+win8+wpa81+wp8</TargetFrameworks>
+    <TargetFrameworks>netstandard1.1;uap10.0.16299;net45</TargetFrameworks>
     <Optimize>true</Optimize>
     <Copyright>Microsoft Corp. All rights reserved.</Copyright>
     <Product>Microsoft.AppCenter.Core</Product>
@@ -11,10 +9,42 @@
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <FileVersion>1.11.1.0</FileVersion>
     <AssemblyTitle>Microsoft.AppCenter.Core</AssemblyTitle>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.1.0" PrivateAssets="All" />
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.1'">
+    <Compile Include="*.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
-  <Target Name="GetPackagingOutputs" />
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'uap10.0.16299'">
+    <Compile Include="..\Microsoft.AppCenter.UWP\**\*.cs" Exclude="..\Microsoft.AppCenter.UWP\obj\**\*.cs;..\Microsoft.AppCenter.UWP\Properties\**\*.cs;" LinkBase="UWP" />
+    <Compile Include="..\Microsoft.AppCenter.Windows.Shared\**\*.cs" LinkBase="Shared\Windows" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <Compile Include="..\Microsoft.AppCenter.WindowsDesktop\**\*.cs" Exclude="..\Microsoft.AppCenter.WindowsDesktop\obj\**\*.cs;..\Microsoft.AppCenter.WindowsDesktop\Properties\**\*.cs;" />
+    <Compile Include="..\Microsoft.AppCenter.Windows.Shared\**\*.cs" LinkBase="Shared\Windows" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Microsoft.CSharp" />
+</ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Microsoft.AppCenter.Shared\**\*.cs" />
+    <None Include="..\Microsoft.AppCenter.UWP\**\*.cs" Exclude="..\Microsoft.AppCenter.UWP\obj\**\*.cs;..\Microsoft.AppCenter.UWP\Properties\**\*.cs;" LinkBase="UWP" />
+    <None Include="..\Microsoft.AppCenter.WindowsDesktop\**\*.cs" Exclude="..\Microsoft.AppCenter.WindowsDesktop\obj\**\*.cs;..\Microsoft.AppCenter.WindowsDesktop\Properties\**\*.cs;" LinkBase="WindowsDesktop" />
+
+    <None Include="..\Microsoft.AppCenter.Windows.Shared\**\*.cs" LinkBase="Shared\Windows" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.3.1" />
+  </ItemGroup>
+
 </Project>
