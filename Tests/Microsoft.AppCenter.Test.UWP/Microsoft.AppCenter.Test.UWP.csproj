@@ -132,10 +132,6 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.UWP\Microsoft.AppCenter.Crashes.UWP.csproj">
-      <Project>{2f715d51-643c-4f7f-9ea4-6554d4eeccb2}</Project>
-      <Name>Microsoft.AppCenter.Crashes.UWP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\SDK\AppCenterCrashes\WatsonRegistrationUtility\WatsonRegistrationUtility.vcxproj">
       <Project>{b977bf28-3a1c-4a89-a673-a22eddc9d23d}</Project>
       <Name>WatsonRegistrationUtility</Name>

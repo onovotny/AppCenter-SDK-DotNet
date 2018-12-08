@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\Microsoft.AppCenter.Crashes.Shared\Microsoft.AppCenter.Crashes.Shared.projitems" Label="Shared" />
+﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;portable-net45+win8+wpa81+wp8</TargetFrameworks>
+    <TargetFrameworks>netstandard1.1;net45;netcoreapp3.0</TargetFrameworks>
     <Optimize>true</Optimize>
     <Copyright>Microsoft Corp. All rights reserved.</Copyright>
     <Product>Microsoft.AppCenter.Crashes</Product>
@@ -11,11 +9,38 @@
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <FileVersion>1.11.1.0</FileVersion>
     <AssemblyTitle>Microsoft.AppCenter.Crashes</AssemblyTitle>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' != 'netstandard1.1'">
+    <DefineConstants>$(DefineConstants);USES_WATSON</DefineConstants>    
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.1.0" PrivateAssets="All" />
     <ProjectReference Include="..\..\AppCenter\Microsoft.AppCenter\Microsoft.AppCenter.csproj" />
   </ItemGroup>
-  <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
-  <Target Name="GetPackagingOutputs" />
+
+  <ItemGroup Condition="'$(TargetFramework)' != 'netstandard1.1'">
+    <Compile Include="..\Microsoft.AppCenter.Crashes.Windows.Shared\**\*.cs" LinkBase="Shared\Windows" />
+    <Compile Include="..\Microsoft.AppCenter.Crashes.Shared\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'uap10.0.16299'">
+    <ProjectReference Include="..\WatsonRegistrationUtility\WatsonRegistrationUtility.vcxproj"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45' or '$(TargetFramework)' == 'netcoreapp3.0'">
+    <Compile Include="..\Microsoft.AppCenter.Crashes.WindowsDesktop\**\*.cs"
+          Exclude="..\Microsoft.AppCenter.Crashes.WindowsDesktop\obj\**\*.cs;..\Microsoft.AppCenter.Crashes.WindowsDesktop\Properties\**\*.cs;" LinkBase="WindowsDesktop" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <None Include="..\Microsoft.AppCenter.Crashes.Shared\**\*.cs" />
+    <None Include="..\Microsoft.AppCenter.Crashes.WindowsDesktop\**\*.cs" 
+          Exclude="..\Microsoft.AppCenter.Crashes.WindowsDesktop\obj\**\*.cs;..\Microsoft.AppCenter.Crashes.WindowsDesktop\Properties\**\*.cs;" LinkBase="WindowsDesktop" />
+
+    <None Include="..\Microsoft.AppCenter.Crashes.Windows.Shared\**\*.cs" LinkBase="Shared\Windows" />
+  </ItemGroup>
 </Project>

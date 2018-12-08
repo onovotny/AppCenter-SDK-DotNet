@@ -129,10 +129,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.UWP\Microsoft.AppCenter.Crashes.UWP.csproj">
-      <Project>{2f715d51-643c-4f7f-9ea4-6554d4eeccb2}</Project>
-      <Name>Microsoft.AppCenter.Crashes.UWP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\SDK\AppCenterPush\Microsoft.AppCenter.Push.UWP\Microsoft.AppCenter.Push.UWP.csproj">
       <Project>{8072449C-C6A8-4B36-87DC-173F295D161C}</Project>
       <Name>Microsoft.AppCenter.Push.UWP</Name>
