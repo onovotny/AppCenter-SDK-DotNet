@@ -1,6 +1,6 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.1;uap10.0.16299;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard1.1;uap10.0.16299;net45;netcoreapp3.0</TargetFrameworks>
     <Optimize>true</Optimize>
     <Copyright>Microsoft Corp. All rights reserved.</Copyright>
     <Product>Microsoft.AppCenter.Core</Product>
@@ -12,7 +12,7 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net45' or '$(TargetFramework)' == 'netcoreapp3.0'">
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
@@ -33,6 +33,12 @@
     <Reference Include="System.Configuration" />
     <Reference Include="Microsoft.CSharp" />
 </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <Compile Include="..\Microsoft.AppCenter.WindowsDesktop\**\*.cs" Exclude="..\Microsoft.AppCenter.WindowsDesktop\obj\**\*.cs;..\Microsoft.AppCenter.WindowsDesktop\Properties\**\*.cs;" />
+    <Compile Include="..\Microsoft.AppCenter.Windows.Shared\**\*.cs" LinkBase="Shared\Windows" />
+    <PackageReference Include="System.Management" Version="4.6.0-preview.18571.3" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Include="..\Microsoft.AppCenter.Shared\**\*.cs" />
