@@ -102,10 +102,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.WindowsDesktop\Microsoft.AppCenter.Analytics.WindowsDesktop.csproj">
-      <Project>{1f6c139a-29bb-4e74-8df2-f8ccab399a67}</Project>
-      <Name>Microsoft.AppCenter.Analytics.WindowsDesktop</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.WindowsDesktop\Microsoft.AppCenter.Crashes.WindowsDesktop.csproj">
       <Project>{dc55c086-714d-4e2f-b6ce-3c14bc3b6646}</Project>
       <Name>Microsoft.AppCenter.Crashes.WindowsDesktop</Name>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;portable-net45+win8+wpa81+wp8</TargetFrameworks>
+    <TargetFrameworks>netstandard1.1;uap10.0.16299;net45;netcoreapp3.0</TargetFrameworks>
     <Optimize>true</Optimize>
     <Copyright>Microsoft Corp. All rights reserved.</Copyright>
     <Product>Microsoft.AppCenter.Analytics</Product>
@@ -10,11 +9,22 @@
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <FileVersion>1.11.1.0</FileVersion>
     <AssemblyTitle>Microsoft.AppCenter.Analytics</AssemblyTitle>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.1.0" PrivateAssets="All" />
     <ProjectReference Include="..\..\AppCenter\Microsoft.AppCenter\Microsoft.AppCenter.csproj" />
   </ItemGroup>
-  <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
-  <Target Name="GetPackagingOutputs" />
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.1'">
+    <Compile Include="*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' != 'netstandard1.1'">
+    <Compile Include="..\Microsoft.AppCenter.Analytics.Windows.Shared\**\*.cs" LinkBase="Shared\Windows" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="..\Microsoft.AppCenter.Analytics.Windows.Shared\**\*.cs" LinkBase="Shared\Windows"/>
+  </ItemGroup>
 </Project>

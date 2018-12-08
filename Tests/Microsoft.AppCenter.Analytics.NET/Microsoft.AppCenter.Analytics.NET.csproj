@@ -66,6 +66,5 @@
       <Name>Microsoft.AppCenter.NET</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.Windows.Shared\Microsoft.AppCenter.Analytics.Windows.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

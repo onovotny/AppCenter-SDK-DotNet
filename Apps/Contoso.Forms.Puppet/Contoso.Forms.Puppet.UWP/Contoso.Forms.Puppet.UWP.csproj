@@ -136,10 +136,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SDK\AppCenterAnalytics\Microsoft.AppCenter.Analytics.UWP\Microsoft.AppCenter.Analytics.UWP.csproj">
-      <Project>{200073bf-fa7e-42af-8ed5-aa50be7c0295}</Project>
-      <Name>Microsoft.AppCenter.Analytics.UWP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\SDK\AppCenterCrashes\Microsoft.AppCenter.Crashes.UWP\Microsoft.AppCenter.Crashes.UWP.csproj">
       <Project>{2f715d51-643c-4f7f-9ea4-6554d4eeccb2}</Project>
       <Name>Microsoft.AppCenter.Crashes.UWP</Name>
